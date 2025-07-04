@@ -1,0 +1,108 @@
+.follow-requests-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.follow-requests-container h2 {
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.request-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.request-user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.request-user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.request-user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.request-user-name {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.request-user-username {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.request-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.accept-button,
+.reject-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.accept-button {
+  background-color: #38a169;
+  color: white;
+}
+
+.accept-button:hover {
+  background-color: #2f855a;
+}
+
+.reject-button {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.reject-button:hover {
+  background-color: #c53030;
+}
+
+.loading {
+  text-align: center;
+  color: #718096;
+  padding: 2rem;
+}
+
+.error {
+  text-align: center;
+  color: #e53e3e;
+  padding: 2rem;
+}
+
+.no-requests {
+  text-align: center;
+  color: #718096;
+  padding: 2rem;
+  background-color: #f7fafc;
+  border-radius: 8px;
+} 

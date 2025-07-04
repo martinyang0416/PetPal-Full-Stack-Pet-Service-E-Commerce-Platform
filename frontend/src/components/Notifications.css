@@ -1,0 +1,93 @@
+.notifications-container {
+  position: relative;
+  display: inline-block;
+}
+
+.notifications-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #4a5568;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.notifications-button:hover {
+  color: #2d3748;
+}
+
+.notifications-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  max-height: 480px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.notifications-header h3 {
+  margin: 0;
+  color: #2d3748;
+  font-size: 1.1rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #718096;
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 1;
+}
+
+.close-button:hover {
+  color: #4a5568;
+}
+
+.notifications-content {
+  padding: 1rem;
+}
+
+/* Override FollowRequests styles when inside notifications */
+.notifications-content .follow-requests-container {
+  margin: 0;
+  padding: 0;
+}
+
+.notifications-content .follow-requests-container h2 {
+  display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .notifications-dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+
+  .notifications-content {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+} 
