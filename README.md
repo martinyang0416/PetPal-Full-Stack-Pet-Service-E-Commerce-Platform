@@ -1,4 +1,4 @@
-# 18653-Team-SV-01
+Pawfectly/PetPal: Full-Stack Pet Service & E-Commerce Platform
 
 ## Project Overview
 Pawfectly is a comprehensive platform designed to connect pet owners with veterinary services, pet care providers, and pet-related products. Our platform aims to streamline pet care management by providing a one-stop solution for all pet-related needs, from veterinary services to pet sitting and product purchases.
